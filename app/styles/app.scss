@@ -538,9 +538,9 @@ animation-name: fadeOutLeft;
 .about-section{
   height: 100vh;
   .about-header{
-    background: url('../images/me.jpeg')0 -325px;
+    background: url('../images/me.jpg')0 -290px;
     background-size: cover;
-    height: 45vh;
+    height: 40vh;
     h2{
       margin-top: 0;
       padding: 135px 0 0 100px;
@@ -551,22 +551,76 @@ animation-name: fadeOutLeft;
       letter-spacing: 5px;
     }
   }
-  .middle {
-    p{
-      border-left: 1px solid black;
-      border-right: 1px solid black;
-      padding: 0 15px;
-    }
-  }
-  .about-content{
-    text-align: center;
 
+  .about-content{
+    border-bottom: 1px solid lightgray;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    h3{
+      font-family: Cabin;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: lighter;
+      font-size: 18px;
+      padding-bottom: 10px;
+      margin-top: 10px;
+    }
+    img{
+      height: 100px;
+      margin-top: 10px;
+    }
     ul{
       list-style: none;
       padding: 0;
       li{
-
       }
     }
+    p{
+      padding: 0;
+      font-size: 16px;
+      font-weight: 200;
+      color: rgba(74, 76, 76, 0.9);
+    }
+    .education-content{
+      padding: 0;
+      h5{
+        display: inline-block;
+        margin: 10px 0 5px 0;
+        font-style: italic;
+        font-family: Cabin;
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 100;
+        color: rgba(74, 76, 76, 1);
+      }
+    }
+    .resume{
+      text-align: center;
+      margin-top: 8px;
+      a{
+        display: inline-block;
+        text-decoration: none;
+        color: rgba(50, 51, 51, 1);
+        border: 1px solid rgba(50, 51, 51, 1);
+        padding: 10px 30px;
+        border-radius: 25px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: Cabin;
+        transition: .5s;
+        font-weight: lighter;
+        &:hover{
+          color: white;
+          background-color: rgba(50, 51, 51, 1);
+        }
+      }
+    }
+  }
+  .contact{
+    h3{
+      border-bottom: none;
+    }
+    text-align: center;
   }
 }
