@@ -581,6 +581,13 @@ animation-name: fadeOutLeft;
       font-weight: 200;
       color: rgba(74, 76, 76, 0.9);
     }
+    .social-tabs{
+      ul{
+        li{
+          display: inline-block;
+        }
+      }
+    }
     .education-content{
       padding: 0;
       h5{
@@ -618,6 +625,24 @@ animation-name: fadeOutLeft;
     }
   }
   .contact{
-    
+    border: none;
+    ul{
+
+      li{
+        font-size: 16px;
+        color: rgba(50, 51, 51, 0.8);
+        letter-spacing: 1px;
+        padding: 2px;
+        font-weight: 200;
+        a{
+          text-decoration: none;
+          color: rgba(167, 128, 0, 1);
+          transition: .5s;
+          &:hover{
+            color: rgba(50, 51, 51, 0.8);
+          }
+        }
+      }
+    }
   }
 }
