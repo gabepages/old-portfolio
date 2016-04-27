@@ -543,7 +543,7 @@ animation-name: fadeOutLeft;
     height: 40vh;
     h2{
       margin-top: 0;
-      padding: 135px 0 0 100px;
+      padding: 135px 0 0 0;
       font-size: 65px;
       color: white;
       font-family: Raleway;
@@ -618,9 +618,6 @@ animation-name: fadeOutLeft;
     }
   }
   .contact{
-    h3{
-      border-bottom: none;
-    }
-    text-align: center;
+    
   }
 }
