@@ -475,6 +475,10 @@ animation-name: fadeOutLeft;
   background: url('../images/header.jpeg')0 -150px ;
   background-size: cover;
   height: 100vh;
+  .hide-a-tags{
+    height: 0px;
+    display: inline;
+  }
   ul{
     list-style: none;
     text-align: center;
@@ -534,13 +538,66 @@ animation-name: fadeOutLeft;
   }
 }
 
+.hidden-top-button{
+  position: fixed;
+  bottom: 35px;
+  left: 95px;
+  z-index: 1000;
+  transition: .7s;
+  #to-top{
+    i{
+      color: white;
+      padding: 8px 10px 12px 10px;;
+      border: 2px solid black;
+      border-radius: 25px;
+      background-color: black;
+      transition: .7s;
+      &:hover{
+        border: 2px solid rgba(167, 128, 0, 1);
+        background-color: rgba(167, 128, 0, 1);
+      }
+    }
+  }
+
+  ul{
+    padding: 0;
+    li{
+      text-align: center;
+      display: block;
+      background-color: rgba(50, 51, 51, 1);
+      transition: .5s;
+      margin: 5px 8px 0px 8px;;
+      border-radius: 30px;
+      &:hover{
+        background-color: rgba(167, 128, 0, 1);
+
+      }
+      a{
+        display: inline-block;
+        padding: 8px 10px 8px 10px;
+        i{
+          color: white;
+        }
+      }
+    }
+  }
+
+
+
+}
 
 .about-section{
+  transition: all .5s ease;
   height: 100vh;
+  .hide-a-tags{
+    height: 0px;
+    display: inline;
+  }
   .about-header{
-    background: url('../images/me.jpg')0 -290px;
+    background: url('../images/1.jpg')0px -350px;
+
     background-size: cover;
-    height: 40vh;
+    height: 45vh;
     h2{
       margin-top: 0;
       padding: 135px 0 0 0;
@@ -585,6 +642,21 @@ animation-name: fadeOutLeft;
       ul{
         li{
           display: inline-block;
+          background-color: rgba(50, 51, 51, 1);
+          transition: .5s;
+          margin: 24px 60px 0 20px;
+          border-radius: 30px;
+          &:hover{
+            background-color: rgba(167, 128, 0, 1);
+
+          }
+          a{
+            display: inline-block;
+            padding: 8px 10px 8px 10px;
+            i{
+              color: white;
+            }
+          }
         }
       }
     }
