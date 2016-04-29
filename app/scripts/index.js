@@ -10,7 +10,7 @@ $(function() {
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 800);
+        }, 700);
         return false;
       }
     }
@@ -28,5 +28,18 @@ $(function() {
       }
   });
 
+
+  $('.image').hover(
+    function(e){
+      var element = $(this).parent().children('p');
+      element.removeClass('fadeOut');
+      element.removeClass('hidden');
+    },
+    function(e){
+      var element = $(this).parent().children('p');
+      element.addClass('fadeOut');
+      element.addClass('hidden');
+    }
+  );
 
 });
