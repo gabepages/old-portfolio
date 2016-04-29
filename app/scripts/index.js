@@ -1,4 +1,4 @@
-var $ = require('jquery');
+  var $ = require('jquery');
 var _ = require('underscore');
 
 
@@ -32,14 +32,27 @@ $(function() {
   $('.image').hover(
     function(e){
       var element = $(this).parent().children('p');
-      element.removeClass('fadeOut');
-      element.removeClass('hidden');
+      element.css('display', 'inline-block');
+      $(this).css('opacity','0.2');
+      element.hover(
+        function(e){
+          console.log(this);
+          $(this).css('display', 'inline-block');
+          var element = $(this).siblings('.image');
+          element.css('opacity','0.2');
+        },
+        function(e){
+
+        }
+      );
     },
     function(e){
       var element = $(this).parent().children('p');
-      element.addClass('fadeOut');
-      element.addClass('hidden');
+      element.css('display', 'none');
+      $(this).css('opacity','1');
     }
   );
+
+
 
 });
