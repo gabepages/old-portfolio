@@ -29,30 +29,73 @@ $(function() {
   });
 
 
+
+
+
+
   $('.image').hover(
     function(e){
-      var element = $(this).parent().children('p');
-      element.css('display', 'inline-block');
       $(this).css('opacity','0.2');
-      element.hover(
-        function(e){
-          console.log(this);
-          $(this).css('display', 'inline-block');
-          var element = $(this).siblings('.image');
-          element.css('opacity','0.2');
-        },
-        function(e){
-
-        }
-      );
+      var element = $(this).parent().children('p');
+      element.removeClass('fadeOut');
+      element.css('display', 'inline-block');
     },
     function(e){
-      var element = $(this).parent().children('p');
-      element.css('display', 'none');
       $(this).css('opacity','1');
+      var element = $(this).parent().children('p');
+      element.addClass('fadeOut');
+  });
+
+
+  $('.image').siblings('p').hover(
+    function(e){
+      $(this).removeClass('fadeOut');
+      $(this).css('display', 'inline-block');
+      var element = $(this).siblings('.image');
+      element.css('opacity','0.2');
+    },
+    function(e){
+      if($(this).siblings('.image').is(':hover')){
+        console.log('working');
+      }else{
+        $(this).siblings('.image').css('opacity','1');
+        $(this).addClass('fadeOut');
+      }
+  });
+
+
+
+
+
+  $('.portfolio-piece').hover(
+    function(){
+      $(this).css('opacity','0.2');
+      var element = $(this).siblings('.extentions');
+      element.removeClass('fadeOut');
+      element.css('display', 'block');
+    },
+    function(){
+      $(this).css('opacity','1');
+      var element = $(this).siblings('.extentions');
+        element.addClass('fadeOut');
     }
   );
 
 
+  $('.extentions').hover(
+    function(){
+      $(this).removeClass('fadeOut');
+      $(this).css('display', 'block');
+      var element = $(this).siblings('.portfolio-piece');
+      element.css('opacity', '0.2');
+    },
+    function(){
+      if($(this).siblings('.portfolio-piece').is(':hover')){
+        console.log('working');
+      }else{
+        $(this).siblings('.portfolio-piece').css('opacity','1');
+        $(this).addClass('fadeOut');
+      }
+  });
 
 });

@@ -540,7 +540,7 @@ animation-name: fadeOutLeft;
 
 .hidden-top-button{
   position: fixed;
-  bottom: 35px;
+  bottom: 25px;
   left: 95px;
   z-index: 1000;
   transition: .7s;
@@ -774,9 +774,6 @@ animation-name: fadeOutLeft;
           background-color: white;
           transition: 0.5s;
 
-          &:hover{
-            opacity: 0.2;
-          }
           img{
             height: 100px;
             width: 100px;
@@ -813,14 +810,13 @@ animation-name: fadeOutLeft;
           width: 50%;
           transition: 0.5s;
           border-radius: 5px;
-          &:hover{
-            opacity: 0.2;
-          }
         }
         .extentions{
+          display: none;
           position: absolute;
           bottom: 85px;
-          width: 94%;
+          left: 130px;
+          width: 47%;
          i{
             background-color: white;
             padding: 10px 8px 10px 8px;
