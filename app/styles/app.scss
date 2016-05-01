@@ -737,6 +737,27 @@ animation-name: fadeOutLeft;
     margin: 0 auto 25px auto;
     font-size: 28px;
   }
+  .social-tabs{
+    margin-top: 18px;
+    li{
+      display: inline-block;
+      background-color: rgba(50, 51, 51, 1);
+      transition: .5s;
+      margin: 24px 60px 0 20px;
+      border-radius: 30px;
+      &:hover{
+        background-color: rgba(167, 128, 0, 1);
+
+      }
+      a{
+        display: inline-block;
+        padding: 8px 10px 8px 10px;
+        i{
+          color: white;
+        }
+      }
+    }
+  }
   .skills{
     height: 45vh;
 
@@ -752,6 +773,7 @@ animation-name: fadeOutLeft;
           border-radius: 95px;
           background-color: white;
           transition: 0.5s;
+
           &:hover{
             opacity: 0.2;
           }
@@ -779,31 +801,34 @@ animation-name: fadeOutLeft;
     }
   }
   .portfolio-content{
-    width: 100vw;
-    height: 44vh;
-    margin-top: 4px;
+    margin-top: 40px;
     img{
-      margin-top: 15px;
+      height: 125px;
     }
-    .wnm{
-      background-color: white;
-      // background: url('../images/wnm.png')center 2px;
-      // background-size: cover;
-      height: 100%;
-    }
-    .responsive{
-      background-color: white;
-      // background: url('../images/wnm.png')center 2px;
-      // background-size: cover;
-      height: 100%;
-      border-left: 1px solid lightgray;
-      border-right: 1px solid lightgray;
-    }
-    .github{
-      background-color: white;
-      // background: url('../images/wnm.png')center 2px;
-      // background-size: cover;
-      height: 100%;
+    .portfolio-piece-section{
+       .portfolio-piece{
+          padding: 48px 40px 48px 40px;
+          margin: 0 auto;
+          background-color: white;
+          width: 50%;
+          transition: 0.5s;
+          border-radius: 5px;
+          &:hover{
+            opacity: 0.2;
+          }
+        }
+        .extentions{
+          position: absolute;
+          bottom: 85px;
+          width: 94%;
+         i{
+            background-color: white;
+            padding: 10px 8px 10px 8px;
+            color: black;
+            border-radius: 25px;
+            margin: 0 10px;
+          }
+        }
     }
   }
 }
