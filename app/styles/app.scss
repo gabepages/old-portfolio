@@ -472,9 +472,11 @@ animation-name: fadeOutLeft;
 }
 
 .app-header{
+  position: relative;
   background: url('../images/header.jpeg')0 -150px ;
   background-size: cover;
   height: 100vh;
+  min-height: 650px;
   .hide-a-tags{
     height: 0px;
     display: inline;
@@ -501,41 +503,49 @@ animation-name: fadeOutLeft;
       }
     }
   }
-  h1{
-    font-size: 75px;
-    margin-top: 500px;
-    text-align: center;
-    font-family: Raleway;
-    font-weight: 100;
-    letter-spacing: 15px;
-    color: white;
-    text-transform: uppercase;
-  }
-  h3{
-    font-size: 28px;
-    text-align: center;
-    font-family: Raleway;
-    font-weight: 100;
-    color: rgba(167, 128, 0, 1);
-  }
-  a{
-    display: block;
-    text-align: center;
-    padding-top: 35px;
-    i{
-      color: black;
-      padding: 10px;
-      border: 2px solid white;
-      border-radius: 25px;
-      background-color: white;
-      transition: .7s;
-      &:hover{
-        border: 2px solid rgba(167, 128, 0, 1);
-        background-color: rgba(167, 128, 0, 1);
+  .header{
+    height: 30%;
+    position: absolute;
+    bottom: 20px;
+    margin: 0 auto;
+    width: 100%;
+    h1{
+      font-size: 75px;
+      text-align: center;
+      font-family: Raleway;
+      font-weight: 100;
+      letter-spacing: 15px;
+      color: white;
+      text-transform: uppercase;
+      margin-top: 0;
+    }
+    h3{
+      font-size: 28px;
+      text-align: center;
+      font-family: Raleway;
+      font-weight: 100;
+      color: rgba(167, 128, 0, 1);
+      height: 25%;
+    }
+    a{
+      display: block;
+      text-align: center;
+      i{
+        color: black;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 25px;
+        background-color: white;
+        transition: .7s;
+        &:hover{
+          border: 2px solid rgba(167, 128, 0, 1);
+          background-color: rgba(167, 128, 0, 1);
 
+        }
       }
     }
   }
+
 }
 
 .hidden-top-button{
@@ -589,15 +599,18 @@ animation-name: fadeOutLeft;
 .about-section{
   transition: all .5s ease;
   height: 114vh;
+  .about-info{
+    min-height: 570px;
+  }
   .hide-a-tags{
     height: 0px;
     display: inline;
   }
   .about-header{
     background: url('../images/1.jpg')0px -350px;
-
     background-size: cover;
     height: 45vh;
+    min-height: 295px;
     h2{
       margin-top: 0;
       padding: 135px 0 0 0;
@@ -723,7 +736,9 @@ animation-name: fadeOutLeft;
 .portfolio{
   background-color: rgba(10, 11, 11, 1);
   display: block;
-  height: 100vh;
+  min-height: 100vh;
+  bottom: 0;
+  position: relative;
   text-align: center;
   h1{
     color: rgba(167, 128, 0, 1);
@@ -739,6 +754,8 @@ animation-name: fadeOutLeft;
   }
   .social-tabs{
     margin-top: 18px;
+    margin-bottom: 0;
+    padding-bottom: 15px;
     li{
       display: inline-block;
       background-color: rgba(50, 51, 51, 1);
@@ -803,6 +820,7 @@ animation-name: fadeOutLeft;
       height: 125px;
     }
     .portfolio-piece-section{
+      margin-top: 15px;
        .portfolio-piece{
           padding: 48px 40px 48px 40px;
           margin: 0 auto;
@@ -815,15 +833,16 @@ animation-name: fadeOutLeft;
           display: none;
           position: absolute;
           top: 25px;
-          left: 130px;
+          left: 123px;
           width: 47%;
           h3{
             margin: 10px 0 0 0 ;
             color: white;
             font-size: 20px;
-            font-family: Cabin;
-            font-weight: 100;
+            font-family: Raleway;
+            font-weight: 400;
             letter-spacing: 2px;
+            padding: 0 1px;
           }
           p{
             color: lightgray;
@@ -845,5 +864,30 @@ animation-name: fadeOutLeft;
           }
         }
     }
+  }
+}
+
+
+@media screen and(max-height: 775px) {
+  .app-header{
+    background: url('../images/header.jpeg')0 -200px;
+    background-size: cover;
+  }
+
+}
+@media screen and(max-height: 700px) {
+  .app-header{
+    background: url('../images/header.jpeg')0 -250px;
+    background-size: cover;
+    .header{
+      bottom: 30px;
+    }
+  }
+
+}
+@media screen and(max-height: 640px) {
+  .app-header{
+    background: url('../images/header.jpeg')0 -300px;
+    background-size: cover;
   }
 }
