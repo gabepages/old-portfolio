@@ -814,7 +814,7 @@ animation-name: fadeOutLeft;
         .extentions{
           display: none;
           position: absolute;
-          bottom: 55px;
+          top: 25px;
           left: 130px;
           width: 47%;
           h3{
@@ -824,6 +824,13 @@ animation-name: fadeOutLeft;
             font-family: Cabin;
             font-weight: 100;
             letter-spacing: 2px;
+          }
+          p{
+            color: lightgray;
+            font-family: Cabin;
+            font-weight: 100;
+            letter-spacing: 1px;
+            padding: 5px 5px;
           }
          i{
             background-color: white;
