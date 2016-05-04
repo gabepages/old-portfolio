@@ -476,7 +476,7 @@ animation-name: fadeOutLeft;
   background: url('../images/header.jpeg')0 -150px ;
   background-size: cover;
   height: 100vh;
-  min-height: 650px;
+  min-height: 620px;
   .hide-a-tags{
     height: 0px;
     display: inline;
@@ -749,6 +749,7 @@ animation-name: fadeOutLeft;
     text-transform: uppercase;
     border-bottom: 1px solid white;
     width: 25vw;
+    min-width: 110px;
     margin: 0 auto 25px auto;
     font-size: 28px;
   }
@@ -833,7 +834,7 @@ animation-name: fadeOutLeft;
           display: none;
           position: absolute;
           top: 25px;
-          left: 123px;
+          left: 26%;
           width: 47%;
           h3{
             margin: 10px 0 0 0 ;
@@ -842,7 +843,7 @@ animation-name: fadeOutLeft;
             font-family: Raleway;
             font-weight: 400;
             letter-spacing: 2px;
-            padding: 0 1px;
+            padding: 0 2px;
           }
           p{
             color: lightgray;
@@ -867,17 +868,13 @@ animation-name: fadeOutLeft;
   }
 }
 
+/***************************
+HEIGHT QUERIES
+***************************/
 
 @media screen and(max-height: 775px) {
   .app-header{
     background: url('../images/header.jpeg')0 -200px;
-    background-size: cover;
-  }
-
-}
-@media screen and(max-height: 700px) {
-  .app-header{
-    background: url('../images/header.jpeg')0 -250px;
     background-size: cover;
     .header{
       bottom: 30px;
@@ -885,9 +882,359 @@ animation-name: fadeOutLeft;
   }
 
 }
-@media screen and(max-height: 640px) {
+
+/***************************
+WIDTH QUERIES
+***************************/
+@media screen and(max-width: 1366px) {
+  .about-section{
+    .about-content{
+      .social-tabs{
+        ul{
+          li{
+            margin: 24px 30px 0 30px;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+@media screen and(max-width: 1300px) {
+  .about-section{
+    .about-header{
+      background: url('../images/1.jpg')0px -300px;
+      background-size: cover;
+    }
+  }
+  .portfolio{
+    .portfolio-content{
+      .portfolio-piece-section{
+        .portfolio-piece{
+          padding: 42px 36px 42px 36px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1200px) {
+  .portfolio{
+    .portfolio-content{
+      .portfolio-piece-section{
+        .portfolio-piece{
+          padding: 35px 30px 35px 30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and(max-width: 1166px) {
+  .about-section{
+    .about-content{
+      .social-tabs{
+        ul{
+          li{
+            margin: 24px 20px 0 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1150px) {
   .app-header{
-    background: url('../images/header.jpeg')0 -300px;
+    background: url('../images/header.jpeg')center -100px;
     background-size: cover;
   }
+  .about-section{
+    .about-header{
+      background: url('../images/1.jpg')0px -230px;
+      background-size: cover;
+    }
+  }
+  .portfolio{
+    .portfolio-content{
+      .portfolio-piece-section{
+        .portfolio-piece{
+          padding: 30px 25px 30px 25px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 1030px) {
+  .app-header{
+    background: url('../images/header.jpeg')center -75px;
+    background-size: cover;
+  }
+  .portfolio{
+    .portfolio-content{
+      .portfolio-piece-section{
+        .portfolio-piece{
+          padding: 24px 18px 24px 18px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 991px) {
+  .about-section{
+    .about-content{
+      h3{
+        text-align: center;
+      }
+      p{
+        text-align: center;
+      }
+      .education-content{
+        text-align: center;
+      }
+      ul{
+        text-align: center;
+      }
+    }
+    .contact{
+      text-align: center;
+      .social-tabs{
+        padding: 0;
+        ul{
+          li{
+            margin: 24px 10px 0 10px;
+          }
+        }
+      }
+    }
+  }
+  .portfolio{
+    .skills{
+      ul{
+        li{
+          margin: 15px 0 25px 0;
+        }
+      }
+    }
+    .portfolio-content{
+      .portfolio-piece-section{
+        padding: 0;
+        margin: 0;
+        .portfolio-piece{
+          border-radius: 0;
+          width: 100%;
+          padding: 40px 0;
+          margin: 0;
+        }
+      }
+      .pp{
+        border-top: 1px solid lightgray;
+        border-bottom: 1px solid lightgray;
+      }
+    }
+    .social-tabs{
+        padding: 0 0 15px 0;
+        li{
+          margin: 24px 25px 0 15px;
+        }
+
+    }
+  }
+}
+
+@media screen and(max-width: 900px) {
+  .about-section{
+    .about-header{
+      background: url('../images/1.jpg')0px -180px;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and(max-width: 770px) {
+  .hidden-top-button{
+    bottom: 10px;
+    left: 50px;
+  }
+  .about-section{
+    .about-header{
+      background: url('../images/1.jpg')0px -130px;
+      background-size: cover;
+      h2{
+        padding: 135px 0 0 40px;
+      }
+    }
+    .about-content{
+      .social-tabs{
+        ul{
+          li{
+            margin: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and(max-width: 727px) {
+  .app-header{
+    ul{
+      li{
+        padding: 25px 40px 0px 80px;
+        a{
+
+        }
+      }
+    }
+  }
+  .hidden-top-button{
+    bottom: 10px;
+    left: 35px;
+  }
+}
+
+@media screen and(max-width: 700px) {
+  .about-section{
+    .about-header{
+      background: url('../images/1.jpg')0px -90px;
+      background-size: cover;
+    }
+  }
+}
+
+@media screen and(max-width: 630px) {
+  .about-section{
+    .about-header{
+      background: url('../images/1small.jpg')0px -40px;
+      background-size: cover;
+      h2{
+        padding: 135px 0 0 20px;
+        font-size: 55px;
+      }
+    }
+  }
+
+}
+
+@media screen and(max-width: 620px) {
+  .app-header{
+    .header{
+      h1{
+        font-size: 60px;
+      }
+    }
+  }
+
+}
+
+@media screen and(max-width: 570px) {
+  .about-section{
+    .about-header{
+      background: url('../images/1small.jpg')0px -20px;
+      background-size: cover;
+      height: 180px;
+    }
+  }
+
+
+}
+
+
+@media screen and(max-width: 515px) {
+  .hidden-top-button {
+    bottom: 50px;
+    left: 40px;
+  }
+  .app-header{
+    ul{
+      li{
+        display: block;
+         padding: 20px 40px 0px 45px;
+      }
+    }
+    .header{
+      bottom: 60px;
+    }
+  }
+  .about-section{
+    .about-header{
+      background: url('../images/1small.jpg')-80px 0px;
+      background-size: cover;
+      h2{
+        text-align: center;
+        padding: 40px 0 0 0;
+      }
+    }
+  }
+
+}
+
+
+
+
+@media screen and(max-width: 425px) {
+  .app-header{
+    .header{
+      a{
+        display: none;
+      }
+    }
+  }
+  .about-section{
+    .about-header{
+      background: url('../images/1small.jpg')-85px 0px;
+      background-size: cover;
+    }
+  }
+  .portfolio{
+    .social-tabs{
+      li{
+        margin: 24px 15px 0 5px;
+      }
+    }
+  }
+}
+
+
+
+
+@media screen and(max-width: 375px) {
+  .about-section{
+    .about-header{
+      background: url('../images/1small.jpg')-100px 0px;
+      background-size: cover;
+    }
+    .about-content{
+      .social-tabs{
+        ul{
+          li{
+            margin: 0 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 320px) {
+  .portfolio{
+    .skills{
+      ul{
+        li{
+          .image{
+            padding: 16px 20px;
+          }
+        }
+      }
+    }
+  }
+
 }
