@@ -912,6 +912,12 @@ WIDTH QUERIES
   .portfolio{
     .portfolio-content{
       .portfolio-piece-section{
+        .extentions{
+          top: 15px;
+          h3{
+            margin: 0;
+          }
+        }
         .portfolio-piece{
           padding: 42px 36px 42px 36px;
         }
@@ -962,6 +968,15 @@ WIDTH QUERIES
   .portfolio{
     .portfolio-content{
       .portfolio-piece-section{
+        .extentions{
+          top: 25px;
+          h3{
+            margin: 0 0 10px 0;
+          }
+          p{
+            display: none;
+          }
+        }
         .portfolio-piece{
           padding: 30px 25px 30px 25px;
         }
@@ -1026,6 +1041,15 @@ WIDTH QUERIES
       .portfolio-piece-section{
         padding: 0;
         margin: 0;
+        .extentions{
+          top: 40px;
+          h3{
+            margin: 0 0 5px 0;
+          }
+          p{
+            display: block;
+          }
+        }
         .portfolio-piece{
           border-radius: 0;
           width: 100%;
@@ -1121,6 +1145,21 @@ WIDTH QUERIES
       }
     }
   }
+  .portfolio{
+    .portfolio-content{
+      .portfolio-piece-section{
+        .extentions{
+          top: 25px;
+          h3{
+            margin: 0 0 5px 0;
+          }
+          p{
+            display: block;
+          }
+        }
+      }
+    }
+  }
 
 }
 
@@ -1195,12 +1234,27 @@ WIDTH QUERIES
     }
   }
   .portfolio{
+    .portfolio-content{
+      .portfolio-piece-section{
+        .extentions{
+          top: 10px;
+          h3{
+            margin: 0 0 5px 0;
+            font-size: 18px;
+          }
+          p{
+            display: block;
+          }
+        }
+      }
+    }
     .social-tabs{
       li{
         margin: 24px 15px 0 5px;
       }
     }
   }
+
 }
 
 
@@ -1231,6 +1285,19 @@ WIDTH QUERIES
         li{
           .image{
             padding: 16px 20px;
+          }
+        }
+      }
+    }
+    .portfolio-content{
+      .portfolio-piece-section{
+        .extentions{
+          h3{
+            font-size: 16px;
+          }
+          p{
+            letter-spacing: 0;
+            padding: 0;
           }
         }
       }
